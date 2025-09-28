@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import downarrow from "./../../public/animations/downarrow.json";
 import About from "@/Components/About";
+import Services from "@/Components/Services";
 
 
 export default function Home() {
@@ -80,6 +81,10 @@ export default function Home() {
       {/* About me */}
       <div className="my-20">
         <About></About>
+      </div>
+
+      <div className="my-20">
+        <Services></Services>
       </div>
     </div>
   );
