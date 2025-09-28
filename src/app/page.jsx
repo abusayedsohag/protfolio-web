@@ -4,6 +4,7 @@ import Lottie from "lottie-react";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import downarrow from "./../../public/animations/downarrow.json";
+import About from "@/Components/About";
 
 
 export default function Home() {
@@ -32,43 +33,54 @@ export default function Home() {
 
   return (
     <div className="text-white w-11/12 mx-auto">
-      <div className="grid grid-cols-2">
-        <div className="flex flex-col gap-10">
-          <div>
-            <h1>WELCOME TO MY WORLD</h1>
-            <h2><span className="text-2xl font-semibold">Hi,</span> I'm Abu Sayed Sohag</h2>
-            <h3 className="text-5xl font-black"><span className="text-[#B14DB6]">Full-Stack</span> Web Developer</h3>
-            <h1 className="h-20"><span ref={typedRef}></span></h1>
+      {/* banner */}
+      <div>
+        <div className="grid grid-cols-2">
+          <div className="flex flex-col gap-10">
+            <div>
+              <h1>WELCOME TO MY WORLD</h1>
+              <h2><span className="text-2xl font-semibold">Hi,</span> I'm Abu Sayed Sohag</h2>
+              <h3 className="text-5xl font-black"><span className="text-[#B14DB6]">Full-Stack</span> Web Developer</h3>
+              <h1 className="h-20"><span ref={typedRef}></span></h1>
+            </div>
+
+            <div className="flex gap-4">
+              <button className="p-2 px-10 font-semibold bg-white text-black rounded-full">My Projects</button>
+              <button className="p-2 px-4 rounded-full border-l border-r">Download CV</button>
+            </div>
+            <div className="flex gap-2 md:gap-4">
+              <button className="w-10 h-10 fa-xl bg-white text-black rounded-full"><i className="fa-brands fa-facebook"></i></button>
+              <button className="w-10 h-10 fa-xl bg-white text-black rounded-full"><i className="fa-solid fa-envelope"></i></button>
+              <button className="w-10 h-10 fa-xl bg-white text-black rounded-full"><i className="fa-brands fa-linkedin"></i></button>
+              <button className="w-10 h-10 fa-xl bg-white text-black rounded-full"><i className="fa-brands fa-instagram"></i></button>
+            </div>
           </div>
 
-          <div className="flex gap-4">
-            <button className="p-2 px-10 font-semibold bg-white text-black rounded-full">My Projects</button>
-            <button className="p-2 px-4 rounded-full border-l border-r">Download CV</button>
-          </div>
-          <div className="flex gap-2 md:gap-4">
-            <button className="w-10 h-10 fa-xl bg-white text-black rounded-full"><i className="fa-brands fa-facebook"></i></button>
-            <button className="w-10 h-10 fa-xl bg-white text-black rounded-full"><i className="fa-solid fa-envelope"></i></button>
-            <button className="w-10 h-10 fa-xl bg-white text-black rounded-full"><i className="fa-brands fa-linkedin"></i></button>
-            <button className="w-10 h-10 fa-xl bg-white text-black rounded-full"><i className="fa-brands fa-instagram"></i></button>
+          <div className="flex justify-end drop-shadow-[-40px_-40px_80px_rgba(40,15,150,1)]">
+            <div className="">
+              <img
+                src="./me.png"
+                width={350}
+              />
+            </div>
           </div>
         </div>
-
-        <div className="flex justify-end drop-shadow-[-40px_-40px_80px_rgba(40,15,150,1)]">
-          <div className="">
-            <img
-              src="./me.png"
-              width={350}
-            />
-          </div>
-        </div>
+        <button className="bg-white w-12 h-12 flex justify-center items-center rounded-full mx-auto">
+          <Lottie
+            animationData={downarrow}
+            loop={true}
+            className="w-10 h-10"
+          />
+        </button>
       </div>
-      <button className="bg-white w-12 h-12 flex justify-center items-center rounded-full mx-auto">
-        <Lottie
-          animationData={downarrow}
-          loop={true}
-          className="w-10 h-10"
-        />
-      </button>
+      <br />
+
+      <hr />
+
+      {/* About me */}
+      <div className="my-20">
+        <About></About>
+      </div>
     </div>
   );
 }
