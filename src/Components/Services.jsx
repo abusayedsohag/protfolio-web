@@ -90,10 +90,6 @@ const Services = () => {
                             <p className='text-center'>Explore latest web technologies constantly.</p>
                         </div>
                     </Carousel>
-
-
-
-
                 </div>
             </div>
 

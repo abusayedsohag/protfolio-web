@@ -6,6 +6,7 @@ import Typed from "typed.js";
 import downarrow from "./../../public/animations/downarrow.json";
 import About from "@/Components/About";
 import Services from "@/Components/Services";
+import Reviews from "@/Components/Reviews";
 
 
 export default function Home() {
@@ -87,6 +88,12 @@ export default function Home() {
 
       <div className="">
         <Services></Services>
+      </div>
+      <br />
+      <hr />
+
+      <div className="">
+        <Reviews></Reviews>
       </div>
     </div>
   );
