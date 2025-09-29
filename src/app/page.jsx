@@ -79,11 +79,13 @@ export default function Home() {
       <hr />
 
       {/* About me */}
-      <div className="my-20">
+      <div className="">
         <About></About>
       </div>
+      <br />
+      <hr />
 
-      <div className="my-20">
+      <div className="">
         <Services></Services>
       </div>
     </div>
