@@ -35,9 +35,9 @@ export default function Home() {
 
 
   return (
-    <div className="text-white w-11/12 mx-auto">
+    <div className="text-white">
       {/* banner */}
-      <div>
+      <div className="w-11/12 mx-auto">
         <div className="grid grid-cols-2">
           <div className="flex flex-col gap-10">
             <div>

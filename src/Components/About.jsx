@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className='py-10'>
+        <div className='py-10 w-11/12 mx-auto'>
             <div className='flex'>
                 <div className="flex w-7xl justify-start drop-shadow-[40px_-40px_80px_rgba(40,15,150,1)]">
                     <img
