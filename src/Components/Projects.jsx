@@ -45,24 +45,24 @@ const Projects = () => {
                         focusOnSelect={true}
                         arrows={false}
                     >
-                        <div className='mx-4 h-40 bg-[#391544] rounded-xl flex flex-col justify-between items-center gap-2'>
+                        <a target='_blank' href='https://abusayedsohag.github.io/first-Assignment-01/' className='mx-4 h-40 bg-[#391544] rounded-xl flex flex-col justify-between items-center gap-2'>
                             <img src="https://i.ibb.co.com/JWyKb2Kg/Screenshot-2025-09-30-195838.png" className='w-full h-full' alt="" />
-                        </div>
-                        <div className='mx-4 h-40 bg-[#391544] rounded-xl flex flex-col justify-between items-center gap-2'>
+                        </a>
+                        <a target='_blank' href='https://abusayedsohag.github.io/first-Assignment-02/' className='mx-4 h-40 bg-[#391544] rounded-xl flex flex-col justify-between items-center gap-2'>
                             <img src="https://i.ibb.co.com/VWt5pDjH/Screenshot-2025-09-30-195853.png" className='w-full h-full' alt="" />
-                        </div>
-                        <div className='mx-4 h-40 bg-[#391544] rounded-xl flex flex-col justify-between items-center gap-2'>
+                        </a>
+                        <a target='_blank' href='https://abusayedsohag.github.io/first-Assignment-03/' className='mx-4 h-40 bg-[#391544] rounded-xl flex flex-col justify-between items-center gap-2'>
                             <img src="https://i.ibb.co.com/tMc5jf41/Screenshot-2025-09-30-195906.png" className='w-full h-full' alt="" />
-                        </div>
-                        <div className='mx-4 h-40 bg-[#391544] rounded-xl flex flex-col justify-between items-center gap-2'>
+                        </a>
+                        <a target='_blank' href='https://abusayedsohag.github.io/first-Assignment-05/' className='mx-4 h-40 bg-[#391544] rounded-xl flex flex-col justify-between items-center gap-2'>
                             <img src="https://i.ibb.co.com/fYKBFLyb/Screenshot-2025-09-30-195928.png" className='w-full h-full' alt="" />
-                        </div>
-                        <div className='mx-4 h-40 bg-[#391544] rounded-xl flex flex-col justify-between items-center gap-2'>
+                        </a>
+                        <a target='_blank' href='https://crowdcube-65051.web.app/' className='mx-4 h-40 bg-[#391544] rounded-xl flex flex-col justify-between items-center gap-2'>
                             <img src="https://i.ibb.co.com/hR4RVRsw/Screenshot-2025-09-30-200000.png" className='w-full h-full' alt="" />
-                        </div>
-                        <div className='mx-4 h-40 bg-[#391544] rounded-xl flex flex-col justify-between items-center gap-2'>
+                        </a>
+                        <a target='_blank' href='https://gadget-heaven-e.netlify.app/' className='mx-4 h-40 bg-[#391544] rounded-xl flex flex-col justify-between items-center gap-2'>
                             <img src="https://i.ibb.co.com/1G0DGXND/Screenshot-2025-09-30-200012.png" className='w-full h-full' alt="" />
-                        </div>
+                        </a>
                     </Carousel>
                 </div>
             </div>
