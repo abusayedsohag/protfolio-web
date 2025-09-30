@@ -8,6 +8,7 @@ import About from "@/Components/About";
 import Services from "@/Components/Services";
 import Reviews from "@/Components/Reviews";
 import Contact from "@/Components/Contact";
+import Whatsapp from "@/Components/Whatsapp";
 
 
 export default function Home() {
@@ -40,7 +41,7 @@ export default function Home() {
       <div className="w-11/12 mx-auto">
         <div className="grid grid-cols-2">
           <div className="flex flex-col gap-10">
-            <div>
+            <div className="space-y-1">
               <h1>WELCOME TO MY WORLD</h1>
               <h2><span className="text-2xl font-semibold">Hi,</span> I'm Abu Sayed Sohag</h2>
               <h3 className="text-5xl font-black"><span className="text-[#B14DB6]">Full-Stack</span> Web Developer</h3>
@@ -48,14 +49,16 @@ export default function Home() {
             </div>
 
             <div className="flex gap-4">
-              <button className="p-2 px-10 font-semibold bg-white text-black rounded-full">My Projects</button>
-              <button className="p-2 px-4 rounded-full border-l border-r">Download CV</button>
+              <a className="p-2 px-10 font-semibold bg-white text-black rounded-full">My Projects</a>
+              <a href="./Abu_Sayed.pdf" download="Abu_Sayed_Resume.pdf" className="p-2 px-4 rounded-full border-l border-r">Download CV</a>
             </div>
             <div className="flex gap-2 md:gap-4">
-              <button className="w-10 h-10 fa-xl bg-white text-black rounded-full"><i className="fa-brands fa-facebook"></i></button>
-              <button className="w-10 h-10 fa-xl bg-white text-black rounded-full"><i className="fa-solid fa-envelope"></i></button>
-              <button className="w-10 h-10 fa-xl bg-white text-black rounded-full"><i className="fa-brands fa-linkedin"></i></button>
-              <button className="w-10 h-10 fa-xl bg-white text-black rounded-full"><i className="fa-brands fa-instagram"></i></button>
+              <a target="_blank" href="https://www.facebook.com/abusayedsohagislam/" className="w-10 h-10 flex justify-center items-center hover:bg-pink-300 fa-xl bg-white text-black rounded-full"><i className="fa-brands fa-facebook"></i></a>
+              <a target="_blank" href="mailto:abusayedsohagislam25@gmail.com" className="w-10 h-10 flex justify-center items-center hover:bg-pink-300 fa-xl bg-white text-black rounded-full"><i className="fa-solid fa-envelope"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/abu-sayed-sohag-islam/" className="w-10 h-10 flex justify-center items-center hover:bg-pink-300 fa-xl bg-white text-black rounded-full"><i className="fa-brands fa-linkedin"></i></a>
+              <a target="_blank" href="https://www.instagram.com/abusayedsohagislam/" className="w-10 h-10 flex justify-center items-center hover:bg-pink-300 fa-xl bg-white text-black rounded-full"><i className="fa-brands fa-instagram"></i></a>
+              <a target="_blank" href="https://wa.me/8801761555819" className="w-10 h-10 flex justify-center items-center hover:bg-pink-300 fa-xl bg-white text-black rounded-full"><i className="fa-brands fa-whatsapp"></i></a>
+              <a target="_blank" href="https://github.com/abusayedsohag" className="w-10 h-10 flex justify-center items-center hover:bg-pink-300 fa-xl bg-white text-black rounded-full"><i className="fa-brands fa-github"></i></a>
             </div>
           </div>
 
@@ -68,40 +71,37 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <button className="bg-white w-12 h-12 flex justify-center items-center rounded-full mx-auto">
+        <a href="#about" className="bg-white w-12 h-12 flex justify-center items-center rounded-full mx-auto">
           <Lottie
             animationData={downarrow}
             loop={true}
             className="w-10 h-10"
           />
-        </button>
+        </a>
       </div>
-      <br />
-
-      <hr />
+      <div className="h-[1px] m-10 bg-gradient-to-r from-transparent via-pink-500 to-transparent" />
 
       {/* About me */}
       <div className="">
         <About></About>
       </div>
-      <br />
-      <hr />
+      <div className="h-[1px] m-10 bg-gradient-to-r from-transparent via-pink-500 to-transparent" />
 
       <div className="">
         <Services></Services>
       </div>
-      <br />
-      <hr />
+      <div className="h-[1px] m-10 bg-gradient-to-r from-transparent via-pink-500 to-transparent" />
 
       <div className="">
         <Reviews></Reviews>
       </div>
-      <br />
-      <hr />
+      <div className="h-[1px] mx-10 bg-gradient-to-r from-transparent via-pink-500 to-transparent" />
 
       <div className="">
         <Contact></Contact>
       </div>
+
+      <Whatsapp></Whatsapp>
     </div>
   );
 }

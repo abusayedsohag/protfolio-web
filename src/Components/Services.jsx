@@ -34,10 +34,8 @@ const Services = () => {
     };
 
 
-
-
     return (
-        <div>
+        <div id='services'>
             <div className='flex flex-col gap-5 py-10'>
                 <h1 className='text-2xl font-bold text-center'>Services</h1>
                 <p className='text-center'>Transforming ideas into intuitive digital experiences</p>

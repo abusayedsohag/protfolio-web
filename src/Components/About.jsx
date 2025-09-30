@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className='py-10 w-11/12 mx-auto'>
+        <div id='about' className='py-10 w-11/12 mx-auto'>
             <div className='flex'>
                 <div className="flex w-7xl justify-start drop-shadow-[40px_-40px_80px_rgba(40,15,150,1)]">
                     <img
@@ -18,12 +18,12 @@ const About = () => {
                     <div>
                         <h1 className='text-xl py-2 font-bold'>Skill</h1>
                         <div className='fa-2xl flex gap-4'>
-                            <i class="fa-brands fa-html5"></i>
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-react"></i>
-                            <i class="fa-brands fa-node-js"></i>
-                            <i class="fa-brands fa-square-js"></i>
-                            <i class="fa-brands fa-node"></i>
+                            <i className="fa-brands fa-html5"></i>
+                            <i className="fa-brands fa-css3-alt"></i>
+                            <i className="fa-brands fa-react"></i>
+                            <i className="fa-brands fa-node-js"></i>
+                            <i className="fa-brands fa-square-js"></i>
+                            <i className="fa-brands fa-node"></i>
                         </div>
                     </div>
                 </div>

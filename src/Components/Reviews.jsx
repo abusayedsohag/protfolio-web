@@ -50,7 +50,7 @@ const Reviews = () => {
 
 
     return (
-        <div className=''>
+        <div id='reviews' className=''>
             <div className='flex flex-col gap-5 py-10 bg-gradient-to-r from-transparent via-purple-500/30 to-transparent'>
                 <h1 className='text-2xl font-bold text-center'>Testimonials</h1>
                 <div className=''>
