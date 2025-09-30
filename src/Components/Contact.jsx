@@ -24,12 +24,6 @@ const Contact = () => {
     }
 
 
-
-
-
-
-
-
     return (
         <div className='py-10 bg-gradient-to-r from-purple-300/20 via-transparent to-yellow-300/20'>
             <h1 className='text-2xl font-bold text-center'>Contact</h1>

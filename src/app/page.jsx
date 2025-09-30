@@ -9,6 +9,7 @@ import Services from "@/Components/Services";
 import Reviews from "@/Components/Reviews";
 import Contact from "@/Components/Contact";
 import Whatsapp from "@/Components/Whatsapp";
+import Projects from "@/Components/Projects";
 
 
 export default function Home() {
@@ -31,10 +32,6 @@ export default function Home() {
     return () => typed.destroy();
   }, []);
 
-
-
-
-
   return (
     <div className="text-white">
       {/* banner */}
@@ -49,7 +46,7 @@ export default function Home() {
             </div>
 
             <div className="flex gap-4">
-              <a className="p-2 px-10 font-semibold bg-white text-black rounded-full">My Projects</a>
+              <a href="#myprojects" className="p-2 px-10 font-semibold bg-white text-black rounded-full">My Projects</a>
               <a href="./Abu_Sayed.pdf" download="Abu_Sayed_Resume.pdf" className="p-2 px-4 rounded-full border-l border-r">Download CV</a>
             </div>
             <div className="flex gap-2 md:gap-4">
@@ -94,6 +91,11 @@ export default function Home() {
 
       <div className="">
         <Reviews></Reviews>
+      </div>
+      <div className="h-[1px] mx-10 bg-gradient-to-r from-transparent via-pink-500 to-transparent" />
+
+      <div className="">
+        <Projects></Projects>
       </div>
       <div className="h-[1px] mx-10 bg-gradient-to-r from-transparent via-pink-500 to-transparent" />
 
