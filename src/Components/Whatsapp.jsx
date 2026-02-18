@@ -4,7 +4,7 @@ import Lottie from 'lottie-react';
 
 const Whatsapp = () => {
     return (
-        <div className='fixed bottom-8 right-8'>
+        <div className='fixed bottom-1 right-1 md:bottom-8 md:right-8'>
             <a href='https://wa.me/8801761555819' target='_blank'>
                 <Lottie
                     animationData={wp}

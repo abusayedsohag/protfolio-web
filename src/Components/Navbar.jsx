@@ -11,20 +11,20 @@ const Navbar = () => {
 
     const links = (
         <>
-            <a onClick={() => {handleLinkClick("Home")}} className={`cursor-pointer transition-colors p-2 ${active === "Home"? 'border-b' : 'hover:bg-pink-600/50'}`}>Home</a>
-            <a href='#services'  onClick={() => {
+            <a onClick={() => { handleLinkClick("Home") }} className={`cursor-pointer transition-colors p-2 ${active === "Home" ? 'border-b' : 'hover:bg-pink-600/50'}`}>Home</a>
+            <a href='#services' onClick={() => {
                 handleLinkClick("Services")
             }} className={`cursor-pointer transition-colors p-2 ${active === "Services"
                 ? 'border-b'
                 : 'hover:bg-pink-600/50'
                 }`} >Services</a>
-            <a href='#myprojects'  onClick={() => {
+            <a href='#myprojects' onClick={() => {
                 handleLinkClick("My Projects")
             }} className={`cursor-pointer transition-colors p-2 ${active === "My Projects"
                 ? 'border-b'
                 : 'hover:bg-pink-600/50'
                 }`} >My Projects</a>
-            <a href='#reviews'  onClick={() => {
+            <a href='#reviews' onClick={() => {
                 handleLinkClick("Reviews")
             }} className={`cursor-pointer transition-colors p-2 ${active === "Reviews"
                 ? 'border-b'
@@ -39,33 +39,12 @@ const Navbar = () => {
         </>
     )
 
-
-    // const links = (
-    //     <>
-    //         {linkTitles.map((title) => (
-    //             <li
-    //                 key={title}
-    //                 onClick={() => {
-    //                     handleLinkClick(title)
-    //                 }}
-    //                 className={`cursor-pointer transition-colors p-2 ${active === title
-    //                     ? 'border-b'
-    //                     : 'hover:bg-pink-600/50'
-    //                     }`}
-    //             >
-    //                 {title}
-    //             </li>
-    //         ))}
-    //     </>
-    // )
-
-
     return (
-        <div className='w-11/12 py-8 mx-auto'>
-            <div className="flex p-2 px-3 bg-pink-600/30 backdrop-blur-2xl rounded-full">
+        <div className='w-11/12 py-3 md:py-8 mx-auto'>
+            <div className="flex py-1 md:py-2 px-2 md:px-3 bg-pink-600/30 backdrop-blur-2xl rounded-sm md:rounded-full">
                 <div className="navbar-start">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="bg-transparent px-4 text-white lg:hidden">
+                        <div tabIndex={0} role="button" className="bg-transparent text-white lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 bg-transparent" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                         </div>
                         <ul
@@ -86,7 +65,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="md:p-2 px-5 md:px-10 text-white rounded-full bg-[#b14db6]">Contact</a>
+                    <a className="md:p-2 px-5 md:px-10 text-white rounded-sm md:rounded-full bg-[#b14db6]">Contact</a>
                 </div>
             </div>
         </div>
