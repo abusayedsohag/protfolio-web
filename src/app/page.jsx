@@ -46,8 +46,8 @@ export default function Home() {
             </div>
 
             <div className="flex gap-2 md:gap-4 text-center">
-              <a href="#myprojects" className="p-2 md:px-10 font-semibold bg-white text-black rounded-full text-[10px] sm:text-lg">My Projects</a>
-              <a href="./Abu_Sayed.pdf" download="Abu_Sayed_Resume.pdf" className="p-2 md:px-4 rounded-full border-l border-r text-[10px] sm:text-lg">Download CV</a>
+              <a href="#myprojects" className="p-2 md:px-10 font-semibold bg-white text-black rounded-full text-[8px] sm:text-lg">My Projects</a>
+              <a href="./Abu_Sayed.pdf" download="Abu_Sayed_Resume.pdf" className="p-2 md:px-4 rounded-full border-l border-r text-[8px] sm:text-lg">Download CV</a>
             </div>
 
             <div className="flex flex-wrap gap-2 md:gap-4">
