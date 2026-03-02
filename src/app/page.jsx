@@ -41,7 +41,7 @@ export default function Home() {
             <div className="space-y-1">
               <h1 className="text-xs md:text-md">WELCOME TO MY WORLD</h1>
               <h2><span className="md:text-2xl font-semibold">Hi,</span> <span className="text-xs md:text-lg">I'm Abu Sayed Sohag</span></h2>
-              <h3 className="text-3xl md:text-5xl font-black"><span className="text-[#B14DB6]">Full-Stack</span> <span className="text-2xl md:text-5xl">Web Developer</span></h3>
+              <h3 className="text-3xl md:text-5xl font-black"><span className="text-[#B14DB6]">Full-Stack</span> <span className="text-lg md:text-5xl">Web Developer</span></h3>
               <h1 className="h-20 hidden md:inline"><span ref={typedRef}></span></h1>
             </div>
 
@@ -60,7 +60,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex justify-end drop-shadow-[-40px_-40px_80px_rgba(40,15,150,1)]">
+          <div className="flex justify-end items-end drop-shadow-[-40px_-40px_80px_rgba(40,15,150,1)]">
             <div className="">
               <img
                 src="./me.png"
